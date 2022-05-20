@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CrudTimesCS.Model;
 using CrudTimesCS.Controller;
+using System.IO;
 
 namespace CrudTimesCS.View
 {
@@ -40,8 +41,14 @@ namespace CrudTimesCS.View
 
             Time.Nometimes = textBoxtimesnome.Text;
             Time.Frasetimes = textBoxfrasetimes.Text;
-            Time.Logotimes = "c://";
 
+            /* buscar imagem e salvar no banco de dados */
+
+            MemoryStream memorylogo = new MemoryStream();
+            pictureBoxlogo.Image.Save(memorylogo, pictureBoxlogo.Image.RawFormat);
+            Time.Logotimes1 = memorylogo.ToArray();
+
+            /* buscar imagem e salvar no banco de dados */
             ManipulaTimes manipulaTimes = new ManipulaTimes();
             manipulaTimes.cadastrotimes();
 
@@ -91,6 +98,15 @@ namespace CrudTimesCS.View
             {
                 fecharcadastro();
             }    
+        }
+
+        private void buttonblogo_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Escolha o seu logo (*.jpg; *.jpeg;*.png;) | *.jpg; *.jpeg;*.png;";
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+               pictureBoxlogo.Image = Image.FromFile(openFileDialog1.FileName);
+            }
         }
     }
 }

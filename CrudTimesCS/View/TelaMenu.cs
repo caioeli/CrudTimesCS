@@ -13,6 +13,8 @@ namespace CrudTimesCS.View
     public partial class TelaMenu : Form
     {
         private DialogResult telacadastrarTimes;
+        private DialogResult pesquisartime;
+        private DialogResult pesquisarjogadores;
 
         public TelaMenu()
         {
@@ -39,6 +41,18 @@ namespace CrudTimesCS.View
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pesquisartime pesquisar = new Pesquisartime();
+            pesquisartime = pesquisar.ShowDialog();
+        }
+
+        private void pesquisaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pesquisarjogadores pesquisar = new pesquisarjogadores();
+            pesquisarjogadores = pesquisar.ShowDialog();
         }
     }
 }

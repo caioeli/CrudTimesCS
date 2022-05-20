@@ -73,6 +73,26 @@ namespace CrudTimesCS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap action_exit_close_remove_13915 {
+            get {
+                object obj = ResourceManager.GetObject("action_exit_close_remove_13915", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Change_User_icon_icons_com_55946 {
+            get {
+                object obj = ResourceManager.GetObject("Change_User_icon-icons.com_55946", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images__2_ {
             get {
                 object obj = ResourceManager.GetObject("images (2)", resourceCulture);
@@ -86,6 +106,16 @@ namespace CrudTimesCS.Properties {
         internal static System.Drawing.Bitmap IMG_20220414_WA0019 {
             get {
                 object obj = ResourceManager.GetObject("IMG-20220414-WA0019", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20220414_WA0020 {
+            get {
+                object obj = ResourceManager.GetObject("IMG-20220414-WA0020", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

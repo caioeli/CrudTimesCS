@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrudTimesCS.Controller
 {
-    class ConexãoBD
+    class ConexaoBD
     {
         public static string conectar()
         {
